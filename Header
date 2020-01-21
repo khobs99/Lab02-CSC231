@@ -1,0 +1,21 @@
+/*********************************
+ * Bushel header
+ * Created by Kenneth Hobday & Elvet Potter II
+ *********************************/
+
+#include <iostream>
+using namespace std;
+
+class bushel
+{ public:
+    bushel();              // Constructor - empty
+    bushel(int,int);       // Constructor with counts
+    bool get(istream &);   // Input
+    void put(ostream &);   // Output
+    bool operator == (bushel);
+    bool lesser(bushel b);
+    bool greater(bushel b);
+  private:
+    int apples;            // Apples in bushel
+    int oranges;           // Oranges in bushel 
+};
